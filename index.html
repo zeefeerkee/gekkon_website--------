@@ -117,6 +117,8 @@
                                 <button
                                     type="button"
                                     class="btn btn-dark btn-lg px-4 me-md-2"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#staticBackdrop"
                                 >
                                     Узнать больше
                                 </button>
@@ -329,9 +331,9 @@
                                             <i>Директор</i>
                                         </li>
                                         <li>
-                                            <a href="mailto:info@gekkon.ru"
+                                            <a href="mailto:arc5995@yandex.ru"
                                                 ><i class="bi bi-envelope"></i
-                                                >&nbsp;info@gekkon.ru</a
+                                                >&nbsp;arc5995@yandex.ru</a
                                             >
                                         </li>
                                         <li>
@@ -499,6 +501,8 @@
                             <button
                                 type="button"
                                 class="btn btn-dark btn-lg px-4 me-md-2"
+                                data-bs-toggle="modal"
+                                data-bs-target="#staticBackdrop"
                             >
                                 Узнать больше
                             </button>
@@ -522,7 +526,7 @@
                                     <img
                                         class="img-fluid bsb-scale-up bsb-hover-scale"
                                         src="img/gallery/photo-1.jpg"
-                                        alt="Большая модель"
+                                        alt="Модель"
                                     />
                                 </a>
                                 <figcaption>
@@ -552,11 +556,11 @@
                                     />
                                 </a>
                                 <figcaption>
-                                    <h3 class="text-black bsb-hover-fadeInUp">
+                                    <h3 class="text-white bsb-hover-fadeInUp">
                                         Модель
                                     </h3>
                                     <div
-                                        class="text-black bsb-hover-fadeInDown"
+                                        class="text-white bsb-hover-fadeInDown"
                                     >
                                         Рендер
                                     </div>
@@ -655,11 +659,11 @@
                                     />
                                 </a>
                                 <figcaption>
-                                    <h3 class="text-black bsb-hover-fadeInLeft">
+                                    <h3 class="text-white bsb-hover-fadeInLeft">
                                         Вариант применения
                                     </h3>
                                     <div
-                                        class="text-black bsb-hover-fadeInRight"
+                                        class="text-white bsb-hover-fadeInRight"
                                     >
                                         Рендер
                                     </div>
@@ -671,7 +675,7 @@
             </section>
         </main>
 
-        <footer class="bg-dark py-5" id="footer">
+        <footer class="bg-dark pt-5" id="footer">
             <div class="container mb">
                 <div class="row">
                     <div class="col d-flex justify-content-center">
@@ -702,7 +706,11 @@
                                     <a class="nav-link" href="#team">Команда</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href=""
+                                    <a
+                                        class="nav-link"
+                                        href=""
+                                        data-bs-toggle="modal"
+                                        data-bs-target="#staticBackdrop"
                                         >Узнать больше</a
                                     >
                                 </li>
@@ -717,9 +725,9 @@
                                 <li class="nav-item">
                                     <a
                                         class="nav-link"
-                                        href="mailto:info@gekkon.ru"
+                                        href="mailto:arc5995@yandex.ru"
                                         ><i class="bi bi-envelope"></i
-                                        >&nbsp;info@gekkon.ru</a
+                                        >&nbsp;arc5995@yandex.ru</a
                                     >
                                 </li>
                                 <li class="nav-item">
@@ -786,8 +794,147 @@
             </div>
         </div>
 
+        <!--Форма обратной связи-->
+        <div
+            class="modal fade"
+            id="staticBackdrop"
+            data-bs-backdrop="static"
+            data-bs-keyboard="false"
+            tabindex="-1"
+            aria-labelledby="staticBackdropLabel"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                            Заказать звонок
+                        </h1>
+                        <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Закрыть"
+                        ></button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="contactForm">
+                            <label for="firstName" class="form-label"
+                                >Имя</label
+                            >
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="firstName"
+                                placeholder="Филипп"
+                                required
+                            />
+                            <div class="invalid-feedback">
+                                Пожалуйста, введите ваше имя.
+                            </div>
+
+                            <label for="lastName" class="form-label"
+                                >Фамилия</label
+                            >
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="lastName"
+                                placeholder="Белобородов"
+                                required
+                            />
+                            <div class="invalid-feedback">
+                                Пожалуйста, введите вашу фамилию.
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="formEmail" class="form-label"
+                                    >Адрес электронной почты</label
+                                >
+                                <input
+                                    type="email"
+                                    class="form-control"
+                                    id="formEmail"
+                                    placeholder="name@example.com"
+                                    required
+                                />
+                                <div class="invalid-feedback">
+                                    Пожалуйста, введите действительный адрес
+                                    электронной почты.
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="formTelephone" class="form-label"
+                                    >Номер телефона</label
+                                >
+                                <input
+                                    type="tel"
+                                    class="form-control"
+                                    id="formTelephone"
+                                    placeholder="8-900-000-00-00"
+                                    required
+                                />
+                                <div class="invalid-feedback">
+                                    Пожалуйста, введите ваш номер телефона.
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="formComment" class="form-label"
+                                    >Комментарий по желанию</label
+                                >
+                                <textarea
+                                    class="form-control"
+                                    id="formComment"
+                                    rows="3"
+                                    placeholder="Начните вводить текст..."
+                                ></textarea>
+                            </div>
+
+                            <div class="form-check mb-5">
+                                <input
+                                    class="form-check-input"
+                                    type="checkbox"
+                                    value=""
+                                    id="checkAgree"
+                                    required
+                                />
+                                <label
+                                    class="form-check-label"
+                                    for="checkAgree"
+                                >
+                                    Отправляя данную форму я даю согласие на
+                                    обработку персональных данных в соответствии
+                                    с
+                                    <a href="privacy.html"
+                                        >Политикой обработки персональных
+                                        данных</a
+                                    >
+                                </label>
+                                <div class="invalid-feedback" for="checkAgree">
+                                    Необходимо согласие на обработку
+                                    персональных данных.
+                                </div>
+                            </div>
+                            <div class="col-12 d-flex justify-content-center">
+                                <button
+                                    class="btn btn-primary"
+                                    type="submit"
+                                    id="submitBtn"
+                                >
+                                    Получить ответ
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <script src="js/bootstrap.bundle.min.js"></script>
         <script src="js/content.loader.js"></script>
+        <script src="js/feedback.form.js"></script>
 
         <script src="https://unpkg.com/jquery@3.6.1/dist/jquery.min.js"></script>
         <script src="https://unpkg.com/isotope-layout@3.0.6/dist/isotope.pkgd.min.js"></script>
