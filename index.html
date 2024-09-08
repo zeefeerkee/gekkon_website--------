@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Геккон</title>
+
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/bs-brain@2.0.4/components/projects/project-1/assets/css/project-1.css"
+        />
+        <link rel="stylesheet" href="css/main.css" />
+        <link rel="stylesheet" href="css/content-loader.css" />
+        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    </head>
+    <body>
+        <header id="header">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#about">
+                        <img
+                            src="img/logos/logo.svg"
+                            alt="Gekkon Logo"
+                            width="25"
+                            class="d-inline-block align-text-bottom"
+                        />
+                    </a>
+                    <div
+                        class="collapse navbar-collapse"
+                        id="navbarSupportedContent"
+                    >
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 fs-5">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#preferences"
+                                    >Преимущества</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#team">Команда</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#footer">Контакты</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div
+                        class="fasie_btn text-center"
+                        data-bs-toggle="modal"
+                        data-bs-target="#contractModal"
+                    >
+                        <img
+                            src="img/logos/FASIElogo-white.svg"
+                            height="45px"
+                            alt="Логотип фонда содействия инновациям"
+                        />
+                    </div>
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent"
+                        aria-expanded="false"
+                        aria-label="Переключатель навигации"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <!--О проекте-->
+            <section class="border-bottom" id="about">
+                <div class="container col-xxl-8 px-4 py-5">
+                    <div
+                        class="row flex-lg-row-reverse align-items-center g-5 py-5"
+                    >
+                        <div class="col-10 col-sm-8 col-lg-6">
+                            <img
+                                src="img/about.png"
+                                class="img-fluid d-block mx-auto"
+                                alt="Робототехническое устройство"
+                                title="Роботехническое устройство"
+                                width="500"
+                                height="500"
+                                loading="lazy"
+                            />
+                        </div>
+                        <div class="col-lg-6">
+                            <h1 style="display: none">
+                                Робототехническое устройство на магнитных
+                                колёсах для диагностики резервуаров
+                            </h1>
+                            <h2
+                                class="display-4 fw-bold text-body-emphasis lh-1 mb-3"
+                            >
+                                Робототехническое устройство на магнитных
+                                колёсах
+                            </h2>
+                            <p class="lead mb-4">
+                                Cочетание современных методов и устройств
+                                неразрушающего контроля, позволяющих
+                                бесконтактно контролировать металлические
+                                резервуары и конструкции различного назначения,
+                                а также колёсной роботизированной платформы с
+                                дистанционным управлением.
+                            </p>
+                            <div
+                                class="d-grid gap-2 d-md-flex justify-content-md-center"
+                            >
+                                <button
+                                    type="button"
+                                    class="btn btn-dark btn-lg px-4 me-md-2"
+                                >
+                                    Узнать больше
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--Преимущества-->
+            <section
+                class="position-relative overflow-hidden border-bottom py-5"
+                id="preferences"
+            >
+                <div class="container">
+                    <div class="mw-md mx-auto">
+                        <div class="row mb-5">
+                            <div class="col text-center">
+                                <h2 style="display: none">
+                                    Преимущества робототехнического комплекса
+                                    для диагностики резервуаров
+                                </h2>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 col-xl-4 mb-2">
+                                <div
+                                    class="d-flex align-items-center pb-5 mb-4 border-bottom"
+                                >
+                                    <div
+                                        class="d-flex flex-shrink-0 align-items-center justify-content-center"
+                                        style="width: 60px; height: 60px"
+                                    >
+                                        <div
+                                            class="icon-rounded d-flex justify-content-center bg-dark"
+                                        >
+                                            <i class="bi bi-router"></i>
+                                        </div>
+                                    </div>
+                                    <div class="mx-3">
+                                        <h3 class="d-block fw-semibold">
+                                            Беспроводная передача
+                                        </h3>
+                                        <p class="lead">
+                                            <mark>Высокая скорость</mark>
+                                            передачи данных до 100 метров в зоне
+                                            прямой видимости
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div
+                                    class="d-flex align-items-center pb-5 mb-1"
+                                >
+                                    <div
+                                        class="d-flex flex-shrink-0 align-items-center justify-content-center"
+                                        style="width: 60px; height: 60px"
+                                    >
+                                        <div
+                                            class="icon-rounded d-flex justify-content-center bg-dark"
+                                        >
+                                            <i class="bi bi-magnet"></i>
+                                        </div>
+                                    </div>
+                                    <div class="mx-3">
+                                        <h3 class="d-block fw-semibold">
+                                            Магнитные колёса
+                                        </h3>
+                                        <p class="lead">
+                                            Благодаря которым робот свободно
+                                            передвигается по наклонным и
+                                            <mark>вертикальным</mark>
+                                            поверхностям резервуаров и
+                                            металлоконструкций
+                                        </p>
+                                        <p class="text-secondary">
+                                            C толщиной стенки не менне чем 4 мм
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="col-md-12 col-xl-4 mb-5 mb-md-0 order-md-last order-xl-0 py-5 content-loader"
+                            >
+                                <img
+                                    class="img-fluid d-block mx-auto features"
+                                    src="img/gekkon_features.png"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="col-md-6 col-xl-4 mb-2">
+                                <div
+                                    class="d-flex align-items-center pb-4 mb-4 border-bottom"
+                                >
+                                    <div
+                                        class="d-flex flex-shrink-0 align-items-center justify-content-center"
+                                        style="width: 60px; height: 60px"
+                                    >
+                                        <div
+                                            class="icon-rounded d-flex justify-content-center bg-dark"
+                                        >
+                                            <i
+                                                class="bi bi-battery-charging"
+                                            ></i>
+                                        </div>
+                                    </div>
+                                    <div class="mx-3">
+                                        <h3 class="d-block fw-semibold">
+                                            Автономность
+                                        </h3>
+                                        <p class="lead">
+                                            В режиме визуально-измерительного
+                                            контроля автономность до&nbsp;<mark
+                                                >12 часов</mark
+                                            >.
+                                        </p>
+                                        <p class="text-secondary">
+                                            В сканирующем режиме до 5 часов
+                                            непрерывной работы
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center pb-1">
+                                    <div
+                                        class="d-flex flex-shrink-0 align-items-center justify-content-center"
+                                        style="width: 60px; height: 60px"
+                                    >
+                                        <div
+                                            class="icon-rounded d-flex justify-content-center bg-dark"
+                                        >
+                                            <i class="bi bi-speedometer2"></i>
+                                        </div>
+                                    </div>
+                                    <div class="mx-3">
+                                        <h3 class="d-block">Скорость</h3>
+                                        <p class="lead">
+                                            В режиме визуально-измерительного
+                                            контроля скорость может достигать
+                                            до&nbsp;<mark>10&nbsp;м/мин</mark>.
+                                        </p>
+                                        <p class="text-secondary">
+                                            В сканирующем режиме скорость
+                                            устройства не превышает 2 м/мин
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--Команда проекта-->
+            <section class="team py-5 border-bottom" id="team">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <h2 class="display-4 fw-normal mb-4 text-center">
+                                Команда проекта
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 col-xl-4">
+                            <div
+                                class="card border-light teammate w-75 content-loader"
+                            >
+                                <img
+                                    src="img/team/teammate-1.png"
+                                    class="card-img-top"
+                                    alt="Фото Белобородова Филиппа>"
+                                />
+                                <div class="card-body">
+                                    <h5 class="mb-0">Белобородов Филипп</h5>
+                                    <ul>
+                                        <li>
+                                            <i>Инженер-программист</i>
+                                        </li>
+                                        <li>
+                                            <a
+                                                href="mailto:beloborodov.filipp@zeefy.ru"
+                                                ><i class="bi bi-envelope"></i
+                                                >&nbsp;beloborodov.filipp@zeefy.ru</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a href="https://t.me/zeefeerkee"
+                                                ><i class="bi bi-telegram"></i
+                                                >&nbsp;@zeefeerkee</a
+                                            >
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12 col-xl-4">
+                            <div
+                                class="card border-light teammate w-75 content-loader"
+                            >
+                                <img
+                                    src="img/team/teammate-2.png"
+                                    class="card-img-top"
+                                    alt="Фото Шестакова Максима>"
+                                />
+                                <div class="card-body">
+                                    <h5 class="mb-0">Шестаков Максим</h5>
+                                    <ul>
+                                        <li>
+                                            <i>Директор</i>
+                                        </li>
+                                        <li>
+                                            <a href="mailto:info@gekkon.ru"
+                                                ><i class="bi bi-envelope"></i
+                                                >&nbsp;info@gekkon.ru</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a href="https://t.me/mv_shestakov"
+                                                ><i class="bi bi-telegram"></i
+                                                >&nbsp;@mv_shestakov</a
+                                            >
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-xl-4">
+                            <div
+                                class="card border-light teammate w-75 content-loader"
+                            >
+                                <img
+                                    src="img/team/teammate-3.png"
+                                    class="card-img-top"
+                                    alt="Фото Гумарова Эльдара>"
+                                />
+                                <div class="card-body">
+                                    <h5 class="mb-0">Гумаров Эльдар</h5>
+                                    <ul>
+                                        <li>
+                                            <i>Инженер-технолог</i>
+                                        </li>
+                                        <li>
+                                            <a href="tel:+79028301327"
+                                                ><i
+                                                    class="bi bi-telephone-fill"
+                                                ></i
+                                                >&nbsp;+7 (902) 830 13 27</a
+                                            >
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 col-xl-4">
+                            <div
+                                class="card border-light teammate w-75 content-loader"
+                            >
+                                <img
+                                    src="img/team/teammate-4.png"
+                                    class="card-img-top"
+                                    alt="Фото Гилязетдинова Даниила>"
+                                />
+                                <div class="card-body">
+                                    <h5 class="mb-0">Гилязетдинов Даниил</h5>
+                                    <ul>
+                                        <li>
+                                            <i>Инженер</i>
+                                        </li>
+                                        <li>
+                                            <a
+                                                href="https://t.me/gilyazetdinov25"
+                                                ><i class="bi bi-telegram"></i
+                                                >&nbsp;@gilyazetdinov25</a
+                                            >
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12 col-xl-4">
+                            <div
+                                class="card border-light teammate w-75 content-loader"
+                            >
+                                <img
+                                    src="img/team/teammate-5.png"
+                                    class="card-img-top"
+                                    alt="Фото Кучева Дмитрия>"
+                                />
+                                <div class="card-body">
+                                    <h5 class="mb-0">Кучев Дмитрий</h5>
+                                    <ul>
+                                        <li>
+                                            <i>Инженер</i>
+                                        </li>
+                                        <li>
+                                            <a href="mailto:arc5995@yandex.ru"
+                                                ><i class="bi bi-envelope"></i
+                                                >&nbsp;arc5995@yandex.ru</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a href="tel:+79024742900"
+                                                ><i
+                                                    class="bi bi-telephone-fill"
+                                                ></i
+                                                >&nbsp;+7 (902) 474 29 00</a
+                                            >
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-xl-4">
+                            <div
+                                class="card border-light teammate w-75 content-loader"
+                            >
+                                <img
+                                    src="img/team/teammate-6.png"
+                                    class="card-img-top"
+                                    alt="Фото Владимира Четина>"
+                                />
+                                <div class="card-body">
+                                    <h5 class="mb-0">Владимир Четин</h5>
+                                    <ul>
+                                        <li>
+                                            <i>Инженер-программист</i>
+                                        </li>
+                                        <li>
+                                            <a href="tel:+79523390013"
+                                                ><i
+                                                    class="bi bi-telephone-fill"
+                                                ></i
+                                                >&nbsp;+7 (952) 339 0013</a
+                                            >
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--Для кого это техническое решение-->
+            <section class="forwhom py-5 pb-5 border-bottom">
+                <div class="container">
+                    <h2 class="display-4 fw-normal mb-5 text-center">
+                        Для кого это техническое решение?
+                    </h2>
+                    <div class="row mb-5 content-loader">
+                        <div class="col-md-6">
+                            <h5 class="text-center fw-normal">
+                                Резервуары и трубопроводы нефтегазовых компаний
+                            </h5>
+                        </div>
+                        <div class="col-md-6 content-loader">
+                            <h5 class="text-center fw-normal">
+                                Машины и аппараты теплоснабжающих компаний
+                            </h5>
+                        </div>
+                        <div class="col-md-6 content-loader">
+                            <h5 class="text-center fw-normal">
+                                Теплообменные аппараты и хранилища химических
+                                предприятий
+                            </h5>
+                        </div>
+                        <div class="col-md-6 content-loader">
+                            <h5 class="text-center fw-normal">
+                                Аппараты и устройства предприятий атомной
+                                энергетики
+                            </h5>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 d-flex justify-content-center">
+                            <button
+                                type="button"
+                                class="btn btn-dark btn-lg px-4 me-md-2"
+                            >
+                                Узнать больше
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--Галерея-->
+            <section class="bg-white py-5 py-md-5" id="gallery">
+                <h2 style="display: none">Галерея</h2>
+                <div class="container overflow-hidden content-loader">
+                    <div class="row gy-3 gy-md-2 bsb-project-1-grid">
+                        <div
+                            class="col-12 col-md-6 col-lg-3 bsb-project-1-item"
+                        >
+                            <figure
+                                class="rounded rounded-4 overflow-hidden bsb-overlay-hover"
+                            >
+                                <a href="#!">
+                                    <img
+                                        class="img-fluid bsb-scale-up bsb-hover-scale"
+                                        src="img/gallery/photo-1.jpg"
+                                        alt="Большая модель"
+                                    />
+                                </a>
+                                <figcaption>
+                                    <h3 class="text-white bsb-hover-fadeInLeft">
+                                        Модель
+                                    </h3>
+                                    <div
+                                        class="text-white bsb-hover-fadeInRight"
+                                    >
+                                        Рендер
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </div>
+
+                        <div
+                            class="col-12 col-md-6 col-lg-6 bsb-project-1-item"
+                        >
+                            <figure
+                                class="rounded rounded-4 overflow-hidden bsb-overlay-hover"
+                            >
+                                <a href="#!">
+                                    <img
+                                        class="img-fluid bsb-scale bsb-hover-scale-up"
+                                        src="img/gallery/photo-6.png"
+                                        alt="Реальная модель"
+                                    />
+                                </a>
+                                <figcaption>
+                                    <h3 class="text-black bsb-hover-fadeInUp">
+                                        Модель
+                                    </h3>
+                                    <div
+                                        class="text-black bsb-hover-fadeInDown"
+                                    >
+                                        Рендер
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </div>
+
+                        <div
+                            class="col-12 col-md-6 col-lg-3 bsb-project-1-item"
+                        >
+                            <figure
+                                class="rounded rounded-4 overflow-hidden bsb-overlay-hover"
+                            >
+                                <a href="#!">
+                                    <img
+                                        class="img-fluid bsb-scale-up bsb-hover-scale"
+                                        src="img/gallery/photo-3.jpg"
+                                        alt="ШВП"
+                                    />
+                                </a>
+                                <figcaption>
+                                    <h3 class="text-white bsb-hover-fadeInLeft">
+                                        Диагностика
+                                    </h3>
+                                    <div
+                                        class="text-white bsb-hover-fadeInRight"
+                                    >
+                                        Рендер
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </div>
+
+                        <div
+                            class="col-12 col-md-6 col-lg-3 bsb-project-1-item"
+                        >
+                            <figure
+                                class="rounded rounded-4 overflow-hidden bsb-overlay-hover"
+                            >
+                                <a href="#!">
+                                    <img
+                                        class="img-fluid bsb-scale-up bsb-hover-scale"
+                                        src="img/gallery/photo-4.jpg"
+                                        alt="Шаговый мотор"
+                                    />
+                                </a>
+                                <figcaption>
+                                    <h3 class="text-white bsb-hover-fadeInLeft">
+                                        Диагностика
+                                    </h3>
+                                    <div
+                                        class="text-white bsb-hover-fadeInRight"
+                                    >
+                                        Рендер
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </div>
+
+                        <div
+                            class="col-12 col-md-6 col-lg-3 bsb-project-1-item"
+                        >
+                            <figure
+                                class="rounded rounded-4 overflow-hidden bsb-overlay-hover"
+                            >
+                                <a href="#!">
+                                    <img
+                                        class="img-fluid bsb-scale-up bsb-hover-scale"
+                                        src="img/gallery/photo-5.jpg"
+                                        alt="Конструкция"
+                                    />
+                                </a>
+                                <figcaption>
+                                    <h3 class="text-white bsb-hover-fadeInLeft">
+                                        Реальная модель
+                                    </h3>
+                                    <div
+                                        class="text-white bsb-hover-fadeInRight"
+                                    >
+                                        Сборка
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div
+                            class="col-12 col-md-6 col-lg-6 bsb-project-1-item"
+                        >
+                            <figure
+                                class="rounded rounded-4 overflow-hidden bsb-overlay-hover"
+                            >
+                                <a href="#!">
+                                    <img
+                                        class="img-fluid bsb-scale-up bsb-hover-scale"
+                                        src="img/gallery/photo-2.jpg"
+                                        alt="Вариант применения"
+                                    />
+                                </a>
+                                <figcaption>
+                                    <h3 class="text-black bsb-hover-fadeInLeft">
+                                        Вариант применения
+                                    </h3>
+                                    <div
+                                        class="text-black bsb-hover-fadeInRight"
+                                    >
+                                        Рендер
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="bg-dark py-5" id="footer">
+            <div class="container mb">
+                <div class="row">
+                    <div class="col d-flex justify-content-center">
+                        <iframe
+                            class="rounded"
+                            alt="Карта"
+                            src="https://yandex.ru/map-widget/v1/?um=constructor%3A306b10e4aa385d1eaba272ca023750e9b2fa1b9e7b06ec3872c1540137ffa118&amp;source=constructor"
+                            width="100%"
+                            height="320"
+                            frameborder="0"
+                        ></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col d-flex justify-content-start">
+                        <nav
+                            class="navbar navbar-expand-md navbar-dark bg-dark mb-5"
+                        >
+                            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#features"
+                                        >Преимущества</a
+                                    >
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#team">Команда</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href=""
+                                        >Узнать больше</a
+                                    >
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col d-flex justify-content-end text-end">
+                        <nav
+                            class="navbar navbar-expand-md navbar-dark bg-dark mb-5"
+                        >
+                            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                                <li class="nav-item">
+                                    <a
+                                        class="nav-link"
+                                        href="mailto:info@gekkon.ru"
+                                        ><i class="bi bi-envelope"></i
+                                        >&nbsp;info@gekkon.ru</a
+                                    >
+                                </li>
+                                <li class="nav-item">
+                                    <a
+                                        class="nav-link"
+                                        href="https://t.me/mv_shestakov"
+                                        ><i class="bi bi-telegram"></i
+                                        >&nbsp;@mv_shestakov</a
+                                    >
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col text-secondary">
+                        <p>
+                            &copy;Все права защищены
+                            МИП&nbsp;ООО&nbsp;&laquo;ГЕККОН&raquo; г.Пермь, ул.
+                            Дзержинского&nbsp;50, 3&nbsp;этаж, офис 302
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!--Модальные окна-->
+        <div
+            class="modal fade"
+            id="contractModal"
+            tabindex="-1"
+            aria-labelledby="contractModalLabel"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="contractModalLabel">
+                            Создано при поддержке фонда содействия инновациям
+                        </h1>
+                        <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Закрыть"
+                        ></button>
+                    </div>
+                    <div class="modal-body">
+                        <a href="https://fasie.ru/">
+                            <img
+                                src="img/logos/FASIElogo.svg"
+                                alt="Логотип фонда содействия инновациям"
+                                class="img-fluid"
+                            />
+                        </a>
+                        <p>
+                            Проект реализован при поддержке Фонда содействиях
+                            инноваций (договор 2252ГССС15-L/90053)
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/content.loader.js"></script>
+
+        <script src="https://unpkg.com/jquery@3.6.1/dist/jquery.min.js"></script>
+        <script src="https://unpkg.com/isotope-layout@3.0.6/dist/isotope.pkgd.min.js"></script>
+        <script src="https://unpkg.com/isotope-packery@2.0.1/packery-mode.pkgd.min.js"></script>
+        <script src="https://unpkg.com/imagesloaded@5.0.0/imagesloaded.pkgd.min.js"></script>
+        <script src="https://unpkg.com/bs-brain@2.0.4/components/projects/project-1/assets/controller/project-1.js"></script>
+    </body>
+</html>
